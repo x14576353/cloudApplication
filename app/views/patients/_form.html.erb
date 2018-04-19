@@ -10,43 +10,45 @@
       </ul>
     </div>
   <% end %>
-
+<div class="jumbotron" >
+  
   <div class="field">
     <%= form.label :firstname %>
-    <%= form.text_field :firstname %>
+    <%= form.text_field :firstname, class: "form-control"%>
   </div>
 
   <div class="field">
     <%= form.label :lastname %>
-    <%= form.text_field :lastname %>
+    <%= form.text_field :lastname, class: "form-control"%>
   </div>
 
   <div class="field">
     <%= form.label :dateofbirth %>
-    <%= form.number_field :dateofbirth %>
+    <%= form.date_field :dateofbirth, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :address %>
-    <%= form.text_field :address %>
+    <%= form.text_field :address, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :phonenumber %>
-    <%= form.number_field :phonenumber %>
+    <%= form.number_field :phonenumber, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :infection %>
-    <%= form.text_field :infection %>
+    <%= form.text_field :infection, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :injury %>
-    <%= form.text_field :injury %>
+    <%= form.text_field :injury, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit ,class:"btn btn-outline-primary"%>
+  </div>
   </div>
 <% end %>

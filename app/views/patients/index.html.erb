@@ -4,6 +4,7 @@
 <br>
 <br>
 <br>
+<div class="jumbotron" >
 <h1>Patients</h1>
 
 <%= form_tag(patients_path, :method => "get", id: "search-form") do %>
@@ -50,4 +51,5 @@
 
 <br>
 
-<%= link_to 'New Patient', new_patient_path %>
+<td><button class="btn btn-outline-primary"><%= link_to 'New Patient', new_patient_path %></button>
+</div>
