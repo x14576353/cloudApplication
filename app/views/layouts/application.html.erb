@@ -28,7 +28,11 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><%= render 'devise/menu/login_items' %></a>
             </li>
-            
+            <% if user_signed_in? %>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><%= link_to "Your Profile", user_path(current_user)%></a>
+            </li>
+            <% end %>
           </ul>
         </div>
       </div>
@@ -36,7 +40,7 @@
         
         
  
-  
+    -->
     <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p> 
