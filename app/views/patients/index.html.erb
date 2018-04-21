@@ -17,6 +17,7 @@
   <p>There are no patients containing the term(s) <%= params[:search] %>.</p>
 <% end %>
 
+<% if user_signed_in? %>
 <table class="table">
   <thead>
     <tr>
@@ -52,4 +53,5 @@
 <br>
 
 <td><button class="btn btn-outline-primary"><%= link_to 'New Patient', new_patient_path %></button>
+<% end %>
 </div>
